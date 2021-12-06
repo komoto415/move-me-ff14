@@ -13,6 +13,7 @@ SCAN_CODE_LEGEND = {
 COUNTDOWN = 5
 KEYS = [W, S]
 JUMP_DELAY = 2.5
+DEFAULT_LOOP = 60 * 15
 MUTE = True
 
 def jump():
@@ -40,13 +41,20 @@ def move_me():
 
 
     while True:
-        window = win32gui.FindWindow(None, "FINAL FANTASY XIV")
-        win32gui.SetForegroundWindow(window)
-        time.sleep(.5)
+        # window = win32gui.FindWindow(None, "FINAL FANTASY XIV")
+        # print(window)
+        # tries = 1
+        # try:
+        #     win32gui.SetForegroundWindow(window)
+        #     time.sleep(.5)
+        # except Exception as e:
+        #     print(e)
+        #     print("Going to try and get the window again")
+        #     continue
+
 
         step_time = 2
-        loop_time = 5
-        time.sleep(2)
+        loop_time = DEFAULT_LOOP
         for key in KEYS:
             print(f"Pressing {SCAN_CODE_LEGEND[key]} for {step_time} seconds")
             PressKey(key)
