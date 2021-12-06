@@ -1,9 +1,10 @@
 ## Avoid The AFK Timer
 Just a simple boi that will move your character in game a bit to keep you from getting logged out!
 
-***DISCLAIMER*** This is not something that is really intended to run completely passively as it will just send key inputs
-into the currently focused window.
-
+**DISCLAIMER**  
+1. This is not something that is  intended (yet) to run completely passively as all it does is send key 
+inputs to the *currently* focused window.
+2. *uwu*   
 
 Tested with:
 * Python 3.8.x
