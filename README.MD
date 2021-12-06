@@ -15,5 +15,5 @@ Required Packages:
 * win32gui
 
 Known Issues:
-* FF14 window will not be brought into foreground causing the script to error out:  
+* FF14 window will not be brought into foreground causing the script to error out.  
 Current Resolution: Setting to foreground is currently disabled
